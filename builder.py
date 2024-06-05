@@ -4,6 +4,7 @@ from os import mkdir
 from shutil import rmtree as rmdir
 
 SITES_DIRECTORY = "sites"
+USE_FILETYPE = "xhtml"
 
 SITES: dict[str, dict] = {}
 with open("users.json") as file:
@@ -75,9 +76,9 @@ def main():
         Next = maker(NextIndex)
         Prev = maker(PrevIndex)
         mkdir(joinpath(SITES_DIRECTORY, cursite["id"]))
-        with open(joinpath(SITES_DIRECTORY, cursite["id"], "next.xhtml") as file:
+        with open(joinpath(SITES_DIRECTORY, cursite["id"], "next.%s" % USE_FILETYPE) as file:
             file.write(Next)
-        with open(joinpath(SITES_DIRECTORY, cursite["id"], "prev.xhtml") as file:
+        with open(joinpath(SITES_DIRECTORY, cursite["id"], "prev.%s" % USE_FILETYPE) as file:
             file.write(Prev)
     print("Finished making sites directory")
 
