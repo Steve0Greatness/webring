@@ -73,12 +73,12 @@ def main():
         maker = lambda site: BringUserToSite.replace("{{siteid}}", site["id"]).replace("{{siteurl}}", site["url"])
         NextIndex = index + 1 if index + 1 < len(SITES) else 0
         PrevIndex = index - 1 if index - 1 > 0 else len(SITES) - 1
-        Next = maker(NextIndex)
-        Prev = maker(PrevIndex)
+        Next = maker(SITES[NextIndex])
+        Prev = maker(SITES[PrevIndex])
         mkdir(joinpath(SITES_DIRECTORY, cursite["id"]))
-        with open(joinpath(SITES_DIRECTORY, cursite["id"], "next.%s" % USE_FILETYPE) as file:
+        with open(joinpath(SITES_DIRECTORY, cursite["id"], "next.%s" % USE_FILETYPE), "x") as file:
             file.write(Next)
-        with open(joinpath(SITES_DIRECTORY, cursite["id"], "prev.%s" % USE_FILETYPE) as file:
+        with open(joinpath(SITES_DIRECTORY, cursite["id"], "prev.%s" % USE_FILETYPE), "x") as file:
             file.write(Prev)
     print("Finished making sites directory")
 
