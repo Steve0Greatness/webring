@@ -1,0 +1,7 @@
+== WestWing ==
+
+A small webring software that compiles to plain-HTML,
+making it very easy to host on nearly anything, due to
+the only requirement being the ability to host a server
+that can deliver static content.
+
