@@ -10,17 +10,20 @@ SITES: dict[str, dict] = {}
 with open("users.json") as file:
     SITES = load(file)
 
+
+# Below is XHTML because it is
 BringUserToSite = """
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="refresh" content="0; url={{siteurl}}" />
     <link rel="canonical" href="{{siteurl}}" />
     <title>Bringing you to {{siteid}}</title>
     <style type="text/css">
+    /*<![CDATA[*/
     html {
         background-color: #000;
         color: #fff;
@@ -29,6 +32,7 @@ BringUserToSite = """
         color: #0af;
         text-decoration: underline;
     }
+    /*]]>*/
     </style>
 </head>
 
@@ -46,17 +50,21 @@ BringUserToSite = """
         <a href="{{siteurl}}">{{siteurl}}</a>
     </p>
     <script type="application/javascript">
+        //<![CDATA[
         if (window && window.location && window.location.replace) {
             window.location.replace("{{siteurl}}");
         } else if (window && window.location) {
             windows.location = "{{siteurl}}";
         }
+        //]]>
     </script>
     <!--
         This all _should_ work in basically
         every browser and search crawler that
         has ever existed.
     -->
+</body>
+
 </html>
 """
 
