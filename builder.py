@@ -10,7 +10,6 @@ SITES: dict[str, dict] = {}
 with open("users.json") as file:
     SITES = load(file)
 
-
 # Below is XHTML because it is
 BringUserToSite = """
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
