@@ -79,7 +79,7 @@ def main():
         print("Creating site directory for %s" % cursite["id"])
         maker = lambda site: BringUserToSite.replace("{{siteid}}", site["id"]).replace("{{siteurl}}", site["url"])
         NextIndex = index + 1 if index + 1 < len(SITES) else 0
-        PrevIndex = index - 1 if index - 1 > 0 else len(SITES) - 1
+        PrevIndex = index - 1 if index - 1 >= 0 else len(SITES) - 1
         Next = maker(SITES[NextIndex])
         Prev = maker(SITES[PrevIndex])
         mkdir(joinpath(SITES_DIRECTORY, cursite["id"]))
