@@ -42,5 +42,9 @@
   {
     "id": "netgoatherd",
     "url": "https://goatherd.ddns.net/"
+  },
+  {
+    "id": "breakfast",
+    "url": "https://breakfast.nekoweb.org/"
   }
 ]
