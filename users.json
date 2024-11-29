@@ -46,5 +46,9 @@
   {
     "id": "breakfast",
     "url": "https://breakfast.nekoweb.org/"
+  },
+  {
+    "id": "atomicbolts",
+    "url": "https://atomicbolts.nekoweb.org/"
   }
 ]
