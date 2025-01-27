@@ -8,5 +8,10 @@
     "id": "netgoatherd",
     "url": "https://goatherd.ddns.net/",
     "reason": "Site appears to be fully down."
+  },
+  {
+    "id": "mubilop",
+    "url": "https://mubilop.tech/",
+    "reason": "Doesn't link to webring anymore"
   }
 ]

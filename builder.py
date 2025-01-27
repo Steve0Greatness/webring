@@ -99,9 +99,10 @@ TempRemNotification = """
     </p>
     <blockquote>{{reason}}</blockquote>
     <p>
-        If you are {{siteid}}, please contact the webring
-        owner to have your site reinstated; otherwise, let {{siteid}}
-        know of this removal if possible.
+        If you are {{siteid}}, please fix the listed issue (above) then
+        contact the webring owner to have your site reinstated;
+        otherwise (if you aren't {{siteid}}), let {{siteid}} know of
+        this removal if possible.
     </p>
     <p>
         <a href="{{siteurl}}">Here's a link back to {{siteid}} if

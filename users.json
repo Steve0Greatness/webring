@@ -12,10 +12,6 @@
     "url": "https://gdplayer.neocities.org/"
   },
   {
-    "id": "mubilop",
-    "url": "https://mubilop.tech/"
-  },
-  {
     "id": "dumorando",
     "url": "https://dumorando.com/"
   },
@@ -46,5 +42,9 @@
   {
     "id": "atomicbolts",
     "url": "https://atomicbolts.nekoweb.org/"
+  },
+  {
+    "id": "nova",
+    "url": "https://pastel-skies.nekoweb.org/"
   }
 ]
