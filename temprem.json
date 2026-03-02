@@ -33,5 +33,10 @@
     "id": "dumorando",
     "url": "https://dumorando.com/",
     "reason": "Doesn't link to webring"
+  },
+  {
+    "id": "wouter",
+    "url": "https://worldwidewouter.neocities.org/",
+    "reason": "doesn't link to webring"
   }
 ]
