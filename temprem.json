@@ -38,5 +38,15 @@
     "id": "wouter",
     "url": "https://worldwidewouter.neocities.org/",
     "reason": "doesn't link to webring"
+  },
+  {
+    "id": "dotun",
+    "url": "https://afkdev.me/",
+    "reason": "doesn't link to webring"
+  },
+  {
+    "id": "gdplayer",
+    "url": "https://gdplayer.neocities.org/",
+    "reason": "Dead domain (domain switch?)"
   }
 ]
